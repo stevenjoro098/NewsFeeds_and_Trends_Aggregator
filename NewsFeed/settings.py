@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_celery_beat',
     'rest_framework',
     'NewsApp.apps.NewsappConfig',
     'django.contrib.admin',
