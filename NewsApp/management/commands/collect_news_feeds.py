@@ -18,6 +18,7 @@ gdelt_api = "https://api.gdeltproject.org/api/v2/doc/doc?query=global+news&mode=
 # #     print(f"Link: {entry.link}")
 # #     print("\n")
 from NewsApp.models import GDLETNewsModel
+
 def collect_news():
     url = "https://api.gdeltproject.org/api/v2/doc/doc?query=technology&format=json"
     headers = {
@@ -31,6 +32,7 @@ def collect_news():
             parsed_time = datetime.strptime(i['seendate'], "%Y%m%dT%H%M%SZ")
 
             # Convert to UTC timezone-aware datetime (optional)
+
             parsed_time = parsed_time.replace(tzinfo=timezone("UTC"))
             GDLETNewsModel.objects.create(
                 url=i['url'],

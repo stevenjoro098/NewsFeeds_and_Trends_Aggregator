@@ -16,9 +16,10 @@ class GDLETNewsModel(models.Model):
     title=models.CharField(max_length=400, blank=True)
     summary=models.TextField(null=True, blank=True)
     domain=models.URLField(blank=True)
-    socialimage=models.ImageField(upload_to='media/', blank=True)
+    socialimage=models.URLField(blank=True)
     language=models.CharField(max_length=250)
     sourcecountry=models.CharField(max_length=250, blank=True)
+    #sentiment_analysis = models.CharField(max_length=200, blank=True)
     seendate=models.DateTimeField()
 
     class Meta:
