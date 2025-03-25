@@ -15,12 +15,12 @@ This project is an AI-powered news aggregator that fetches, processes, and analy
 ## 📂 Project Structure
 ```
 news_app/
-│── news_app/              # Django project directory
+│── NewsFeed/              # Django project directory
 │   │── settings.py        # Django settings with Celery configuration
 │   │── celery.py          # Celery initialization
 │   │── __init__.py        # Celery import
 │
-│── news/                 # Django app
+│── NewsApp/                 # Django app
 │   │── models.py          # News model
 │   │── tasks.py           # Celery task for fetching news
 │   │── serializers.py     # Django REST Framework serializers
@@ -29,7 +29,7 @@ news_app/
 │── requirements.txt       # Required dependencies
 │── README.md              # Project documentation
 ```
-
+![Alt Text](Project Description.png)
 ---
 
 ## 🛠 Installation & Setup
