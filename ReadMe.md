@@ -30,7 +30,7 @@ news_app/
 │── README.md              # Project documentation
 ```
 ---
-![Alt Text](Project Description.png)
+![Alt Text](images/Project Description.png)
 ---
 
 ## 🛠 Installation & Setup
