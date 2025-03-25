@@ -29,6 +29,7 @@ news_app/
 │── requirements.txt       # Required dependencies
 │── README.md              # Project documentation
 ```
+---
 ![Alt Text](Project Description.png)
 ---
 
